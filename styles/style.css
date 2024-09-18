@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #f5cc00;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 300;
+}
+
+header img {
+    height: 4rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-nav .links {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 480px;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.introduccion img {
+    width: 40%;
+    min-width: 300px;
+}
+
+.texto-introduccion {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.texto-introduccion h2 {
+    font-size: 8rem;
+    font-weight: 400;
+    font-family: 'Bebas Neue', display;
+    line-height: 6.4rem;
+}
+
+.texto-introduccion p {
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+}
+
+.introduccion button,
+.sobre-nosotros button,
+.equipo button,
+.metodo button,
+.suscripcion button,
+.contacto button {
+    background-color: #f5cc00;
+    padding: .6rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+}
+
+.texto-ayuda button,
+.contacto button,
+.texto-suscripcion button, 
+.contenido-felicidad .texto-informacion button{
+    background-color: #000000;
+    color:white;
+    padding: 16px 40px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+}
+
+.estadisticas {
+    position: absolute;
+    width: 90%;
+    top: 150%;
+    margin-top: 120px;
+    background-color: #e6e6e6;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 82px 64px;
+    box-shadow: 15px 15px 20px #0000004f;
+}
+
+.texto-estadisticas {
+    width: 40%;
+}
+
+.texto-estadisticas h3 {
+    line-height: 4.6rem;
+    font-size: 5rem;
+    color: #f5cc00;
+    font-family: 'Bebas Neue', display;
+    font-weight: 500;
+}
+
+.texto-estadisticas a {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.imagenes-estadisticas {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    min-width: 200px;
+    gap: 1rem;
+}
+
+.imagenes-estadisticas img {
+    width: 40%;
+    min-width: 50px;
+}
+
+.ayuda {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5cc00;
+    padding: 480px 0 120px;
+}
+
+.contenedor-ayuda {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contenedor-ayuda img {
+    width: 50%;
+    min-width: 300px;
+}
+
+.texto-ayuda {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+}
+
+.texto-ayuda h2 {
+    font-size: 120px;
+    font-family: 'Bebas Neue', display;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.texto-ayuda p {
+    width: 70%;
+    font-size: 24px;
+}
+
+.felicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.contenido-felicidad {
+    width: 85%;
+    background-color: #e6e6e6;
+    box-shadow: 15px 15px 20px #0000004f;
+    display: flex;
+}
+
+.contenido-felicidad img {
+    min-height: 100%;
+    width: 50%;
+}
+
+.informacion-felicidad {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 48px;
+}
+
+.texto-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: start;
+    height: 430px;
+}
+
+.texto-informacion h2 {
+    line-height: 4.6rem;
+    word-break: keep-all;
+    font-size: 104px;
+    color: #f5cc00;
+    font-family: 'Bebas Neue', display;
+    font-weight: 500;
+}
+
+.texto-informacion p {
+    width: 70%;
+    font-size: 24px;
+}
+
+.informacion-felicidad img {
+    align-self: end;
+    height: 380px;
+    width: 380px;
+}
+
+.sobre-nosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.sobre-nosotros h2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', display;
+    color: #f5cc00;
+}
+
+.sobre-nosotros p {
+    width: 40%;
+    color: #fff;
+}
+
+.sobre-nosotros img {
+    width: 60%;
+}
+
+.equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 120px 0;
+    gap: 10rem;
+}
+
+.equipo img {
+    width: 40%;
+    min-width: 300px;
+}
+
+.texto-equipo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.texto-equipo h2 {
+    font-size: 64px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', display;
+    line-height: 6.4rem;
+}
+
+.texto-equipo p {
+    font-size: 18px;
+}
+
+.metodo {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    padding: 120px 0;
+}
+
+.contenedor-metodo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contenedor-metodo img {
+    width: 50%;
+    min-width: 300px;
+}
+
+.texto-metodo {
+    width: 40%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+}
+
+.texto-metodo h2 {
+    font-size: 94px;
+    font-family: 'Bebas Neue', display;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.texto-metodo p {
+    width: 70%;
+    font-size: 20px;
+}
+
+.suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 0;
+    gap: 82px;
+}
+
+.suscripcion form {
+    background-color: #000;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    min-width: 300px;
+    padding: 64px;
+    gap: 12px;
+    color: #fff;
+}
+
+.suscripcion input,
+.suscripcion textarea {
+    background-color: #000;
+    border: 3px solid #fff;
+}
+
+.suscripcion input {
+    height: 40px;
+}
+
+.suscripcion p {
+    font-size: 16px;
+}
+
+.suscripcion textarea {
+    height: 180px;
+}
+
+.columnas-formulario {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.grupo-input {
+    width: 45%;
+}
+
+.grupo-input input {
+    width: 100%;
+}
+
+#email,#contrasena,#comentarios{
+    width: 100%;
+}
+.grupo-input,
+.grupo-textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grupo-input label,
+.grupo-textarea label {
+    font-size: 24px;
+}
+
+.texto-suscripcion {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.texto-suscripcion h2 {
+    font-size: 64px;
+    color: #f5cc00;
+    font-weight: 400;
+    font-family: 'Bebas Neue', display;
+    line-height: 56px;
+}
+
+.texto-suscripcion p {
+    font-size: 20px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px 0;
+    background-color: #f5cc00;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 56px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', display;
+    color: #000;
+}
+
+.contacto p {
+    font-size: 24px;
+    color: #000;
+}
+
+.contacto img {
+    width: 80%;
+}
+
+footer {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 98px 48px;
+    color: #f5cc00;
+    gap: 120px;
+}
+
+footer img {
+    width: 140px;
+}
+
+.menu-footer {
+    display: flex;
+    width: 20%;
+    font-size: 24px;
+    align-self: start;
+    justify-content: space-between;
+}
+
+
+
+.iconos-footer {
+    display: flex;
+    gap: 12px;
+}
+
+.iconos-footer img {
+    filter: invert(1);
+    height: 24px;
+    width: 24px;
+}
+
+.informacion-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer hr {
+    margin-bottom: 48px;
+}
+
+@media (max-width:480px) {
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #f5cc00;
+        margin-top: 6%;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .introduccion {
+        padding-bottom: 320px;
+    }
+
+    .texto-introduccion {
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .texto-introduccion h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .estadisticas {
+        top: 180%;
+        padding: 48px;
+    }
+
+    .texto-estadisticas {
+        width: 100%;
+        margin-bottom: 32px;
+        flex-direction: column;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .texto-estadisticas h3 {
+        word-break: keep-all;
+        font-size: 58px;
+        line-height: 42px;
+    }
+
+    .ayuda {
+        padding-top: 280px;
+    }
+
+    .contenedor-ayuda {
+        width: 100%;
+    }
+
+    .texto-ayuda {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto-ayuda h2 {
+        font-size: 39px;
+        line-height: 30px;
+    }
+
+    .texto-ayuda p {
+        font-size: 14px;
+    }
+
+    .felicidad .contenido-felicidad img {
+        display: none;
+    }
+
+    .informacion-felicidad {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .informacion-felicidad img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .texto-informacion {
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto-informacion h2 {
+        font-size: 40px;
+    }
+
+    .texto-informacion p {
+        font-size: 14px;
+    }
+
+    .equipo {
+        gap: 48px;
+    }
+
+    .texto-equipo {
+        align-items: center;
+        text-align: center;
+        width: 70%;
+    }
+
+    .metodo .texto-metodo {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .suscripcion {
+        flex-wrap: wrap;
+    }
+
+    .suscripcion form {
+        width: 90%;
+    }
+
+    .suscripcion p {
+        font-size: 12px;
+    }
+
+    .texto-suscripcion {
+        width: 90%;
+    }
+
+    .texto-ayuda button,
+    .texto-suscripcion button,
+    .contacto button,
+    .contenido-felicidad .texto-informacion button,
+    .introduccion button,
+    .sobre-nosotros button,
+    .metodo button,
+    .equipo button {
+        font-size: 16px;
+        padding: 20px 40px;
+    }
+    .menu-footer{
+        width: 90%;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .columnas-formulario {
+        flex-direction: column;
+    }
+    .grupo-input {
+        width: 100%;
+    }
+}
+
+@media (max-width:370px){
+    .estadisticas{
+        top:110%;
+        margin-top: 440px;
+    }
+}
